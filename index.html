@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="icon" type="image/png" href="icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Selector</title>
+
+<style>
+    body {
+        background:#000;
+        font-family: Arial, sans-serif;
+        color:white;
+        margin:0;
+        min-height:100vh;
+
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items:center;
+        padding-top:60px;
+    }
+
+    .header-row{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:30px;
+        margin-bottom:60px;
+    }
+
+    .top-image{
+        width:150px;
+        height:150px;
+        border-radius:20px;
+        object-fit:cover;
+    }
+
+    .big-text{
+        font-size:60px;
+        font-weight:bold;
+    }
+
+    /* GRID CON 4 TARJETAS POR FILA */
+    .cards-container{
+        display:grid;
+        grid-template-columns: repeat(4, 390px);
+        gap:40px;
+        justify-content:center;
+        margin-bottom:120px;
+    }
+
+    /* TARJETA BASE */
+    .card{
+        width:350px;
+        padding:25px;
+        border-radius:25px;
+        text-decoration:none;
+        color:white;
+        transition:0.35s ease;
+    }
+
+    /* TARJETA 1 */
+    .card-1:hover{ transform:scale(1.07); box-shadow:0 0 25px rgba(255,0,0,0.7); }
+    .card-1{ background:#290000; }
+
+    /* TARJETA 2 */
+    .card-2:hover{ transform:scale(1.10); box-shadow:0 0 25px rgba(0,255,170,0.8); }
+    .card-2{ background:#002b29; }
+
+    /* TARJETA 3 */
+    .card-3:hover{ transform:scale(1.10); box-shadow:0 0 25px rgba(0,150,255,0.8); }
+    .card-3{ background:#001e33; }
+
+    /* TARJETA 4 */
+    .card-4:hover{ transform:scale(1.10); box-shadow:0 0 25px rgba(255,220,0,0.8); }
+    .card-4{ background:#332b00; }
+
+    /* TARJETA 5 */
+    .card-5:hover{ transform:scale(1.10); box-shadow:0 0 25px rgba(255,0,255,0.8); }
+    .card-5{ background:#290029; }  
+    
+    /* TARJETA 6 */
+    .card-6:hover{ transform:scale(1.10); box-shadow:0  0 25px rgba(0,255,0,0.8); }
+    .card-6{ background:#002900; }
+    
+    /* TARJETA 7 */
+    .card-7:hover{ transform:scale(1.10); box-shadow:0 0 25px rgba(255,100,0,0.8); }
+    .card-7{ background:#331900; }
+
+    /* TARJETA 8 */
+    .card-8:hover{ transform:scale(1.10); box-shadow:0 0 25px rgba(150,0,255,0.8); }
+    .card-8{ background:#290033; }
+
+    /* TARJETA 9 */
+    .card-9:hover{ transform:scale(1.10); box-shadow:0 0 25px rgba(0,255,255,0.8); }
+    .card-9{ background:#003333; }
+
+    /* TARJETA 10 */
+    .card-10:hover{ transform:scale(1.10); box-shadow:0 0 25px rgba(255,0,100,0.8); }       
+    .card-10{ background:#330019; }
+
+    /* TARJETA 11 */
+    .card-11:hover{ transform:scale(1.10); box-shadow:0 0 25px rgba(200,200,200,0.8); }
+    .card-11{ background:#222222; }
+
+    /* TARJETA 12 */
+    .card-12:hover{ transform:scale(1.10); box-shadow:0 0 25px rgba(100,100,100,0.8); }
+    .card-12{ background:#111111; }
+
+    .small-image{
+        width:100px;
+        height:100px;
+        border-radius:15px;
+        object-fit:cover;
+    }
+
+    .name-box{
+        display:inline-block;
+        margin-left:15px;
+        padding:10px 25px;
+        border-radius:15px;
+        font-size:20px;
+        font-weight:bold;
+    }
+
+    .desc{
+        margin-top:15px;
+        padding:10px;
+        border-radius:20px;
+        font-size:16px;
+        width:270px;
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="header-row">
+        <img src="icon.png" class="top-image">
+        <span class="big-text">Web Selector</span>
+    </div>
+
+    <!-- TODAS LAS TARJETAS AQUÍ DENTRO -->
+    <div class="cards-container">
+
+        <!-- TARJETA 1 -->
+        <a href="https://danicabello2010.github.io/jusepverso" class="card card-1">
+            <div style="display:flex; align-items:center;">
+                <img src="./logos/jusepverso.png" class="small-image">
+                <div class="name-box">Jusep Verso</div>
+            </div>
+            <div class="desc">Jusep Verso una version de Jusep.apk adaptada para navegadores web</div>
+        </a>
+
+        <!-- TARJETA 2 -->
+        <a href="https://danicabello2010.github.io/PurpleOS" class="card card-2">
+            <div style="display:flex; align-items:center;">
+                <img src="./logos/PurpleOS.png" class="small-image">
+                <div class="name-box">PurpleOS Web</div>
+            </div>
+            <div class="desc">La pagina web de PurpleOS, un sistema operativo basado en android</div>
+        </a>
+
+        <!-- TARJETA 3 -->
+        <a href="#" class="card card-3">
+            <div style="display:flex; align-items:center;">
+                <img src="./soon.png" class="small-image">
+                <div class="name-box">Próximamente</div>
+            </div>
+            <div class="desc">???</div>
+        </a>
+
+        <!-- TARJETA 4 -->
+        <a href="#" class="card card-4">
+            <div style="display:flex; align-items:center;">
+                <img src="./soon.png" class="small-image">
+                <div class="name-box">Próximamente</div>
+            </div>
+            <div class="desc">???</div>
+        </a>
+
+        <!-- TARJETA 5 -->
+        <a href="#" class="card card-5">
+            <div style="display:flex; align-items:center;">
+                <img src="./soon.png" class="small-image">
+                <div class="name-box">Próximamente</div>
+            </div>
+            <div class="desc">???</div>
+        </a>
+
+        <!-- TARJETA 6 -->
+        <a href="#" class="card card-6">
+            <div style="display:flex; align-items:center;">
+                <img src="./soon.png" class="small-image">
+                <div class="name-box">Próximamente</div>
+            </div>
+            <div class="desc">???</div>
+        </a>
+
+        <!-- TARJETA 7 -->
+        <a href="#" class="card card-7">
+            <div style="display:flex; align-items:center;">
+                <img src="./soon.png" class="small-image">
+                <div class="name-box">Próximamente</div>
+            </div>
+            <div class="desc">???</div>
+        </a>
+
+        <!-- TARJETA 8 -->
+        <a href="#" class="card card-8">
+            <div style="display:flex; align-items:center;">
+                <img src="./soon.png" class="small-image">
+                <div class="name-box">Próximamente</div>
+            </div>
+            <div class="desc">???</div>
+        </a>
+
+        <!-- TARJETA 9 -->
+        <a href="#" class="card card-9">
+            <div style="display:flex; align-items:center;">
+                <img src="./soon.png" class="small-image">
+                <div class="name-box">Próximamente</div>
+            </div>
+            <div class="desc">???</div>
+        </a>
+
+        <!-- TARJETA 10 -->
+        <a href="#" class="card card-10">
+            <div style="display:flex; align-items:center;">
+                <img src="./soon.png" class="small-image">
+                <div class="name-box">Próximamente</div>
+            </div>
+            <div class="desc">???</div>
+        </a>
+
+        <!-- TARJETA 11 -->
+        <a href="#" class="card card-11">
+            <div style="display:flex; align-items:center;">
+                <img src="./soon.png" class="small-image">
+                <div class="name-box">Próximamente</div>
+            </div>
+            <div class="desc">???</div>
+        </a>
+
+        <!-- TARJETA 12 -->
+        <a href="#" class="card card-12">
+            <div style="display:flex; align-items:center;">
+                <img src="./soon.png" class="small-image">
+                <div class="name-box">Próximamente</div>
+            </div>
+            <div class="desc">???</div>
+        </a>
+    </div>
+
+</body>
+</html>
